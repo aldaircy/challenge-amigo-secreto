@@ -1,15 +1,15 @@
-<h1>Desafio Amigo Secreto - Alura Latam</h1>
+<h1>Amigo Secreto</h1>
 
 <em> :construction: Proyecto en construcción :construction: </em>
 
 <!--![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)-->
 
 <p>
-  En este desafío creado por la comunidad de Alura Latam se desarrollará una aplicación con Javascript que permita a los usuarios ingresar nombres de amigos y añadirlos a una lista para luego realizar un sorteo aleatorio y determinar quién es el "amigo secreto".
+  Esta es una aplicación que se llevó a cabo a través de un desafío propuesto por la comunidad de Alura Latam. Fue creada con HTML, CSS y Javascript. La aplicación nos permite a los usuarios ingresar nombres de amigos y añadirlos a una lista para luego realizar un sorteo aleatorio y determinar quién es el "amigo secreto".
 </p>
 
 <p>
-  El usuario deberá agregar nombres mediante un campo de texto y un botón "Adicionar". Los nombres ingresados se mostrarán en una lista visible en la página, y al finalizar, un botón "Sortear Amigo" seleccionará uno de los nombres de forma aleatoria, mostrando el resultado en pantalla.
+  El usuario deberá agregar nombres mediante un campo de texto y un botón "Añadir". Los nombres ingresados se mostrarán en una lista visible en la página, y al finalizar, un botón "Sortear Amigo" seleccionará uno de los nombres de forma aleatoria, mostrando el nombre del amigo secreto en pantalla.
 </p>
 
 <h2>Funcionalidades:</h2>
