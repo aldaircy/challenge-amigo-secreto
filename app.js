@@ -2,36 +2,80 @@
 let amigos = []
 
 function agregarAmigo(){
+    // Capturar el valor del campo de entrada
     const nombreAmigo = document.getElementById('amigo').value
+    const resultado = document.getElementById('resultado')
 
+    // Validar que exista un nombre escrito
     if (nombreAmigo == ''){
-        alert('Por favor, inserte un nombre')
+        resultado.innerHTML = 'Por favor, inserte un nombre'
+        resultado.className = 'result-list-error'
     } else {
+        // Validar que exista un nombre valido, que no contenga numeros
         if (!isNaN(nombreAmigo) || /\d/.test(nombreAmigo)){
-            alert('El valor insertado no es un nombre válido')
-            document.getElementById('amigo').value = ''
+            resultado.innerHTML = 'El valor insertado no es un nombre válido'
+            resultado.className = 'result-list-error'
+            limpiarCampo()
         } else {
+            // Validar que el nombre ingresado no se encuentre en el array
             if (amigos.includes(nombreAmigo)){
-                alert('El nombre ya se encuentra registrado, ingrese uno nuevo')
-                document.getElementById('amigo').value = ''
+                resultado.innerHTML = 'El nombre ya se encuentra registrado, ingrese uno nuevo'
+                resultado.className = 'result-list-error'
+                limpiarCampo()
             } else {
+                // Agregar el nombre ingresado al array y actualizar la lista
                 amigos.push(nombreAmigo)
                 actualizarAmigos()
+                if (amigos.length != 0){
+                    resultado.innerHTML = ''
+                }
             }
         }        
         
     }
+    return
 }
 
 function actualizarAmigos(){
+    // Obtener el elemento de la lista
     const lista = document.getElementById('listaAmigos')
+    // Limpiar la lista existente
     lista.innerHTML = ''
 
+    // Iterar sobre el arreglo
     for (let i=0; i<amigos.length; i++){
         const li = document.createElement('li')
+        // Agregar elementos a la lista
         li.textContent = amigos[i]
         lista.appendChild(li)
-        document.getElementById('amigo').value = ''
+        // Limpiar campo de entrada al añadir amigo
+        limpiarCampo()
     }
+    return
 
+}
+
+function limpiarCampo(){
+    document.getElementById('amigo').value = ''
+}
+
+function sortearAmigo(){
+    const resultado = document.getElementById('resultado')
+    // Validar que haya amigos disponibles
+    if(amigos.length === 0 || amigos.length < 2){
+        resultado.innerHTML = 'No se puede sortear, no hay amigos registrados o solo existe uno solo!'
+        resultado.className = 'result-list-error'
+        return
+    } else {
+        // Generar indice aleatorio
+        const generarIndice = Math.floor(Math.random()*amigos.length)
+
+        // Obtener el nombre sorteado a traves del indice generado
+        const amigoSorteado = amigos[generarIndice]
+
+        // Mostrar el resultado
+        resultado.innerHTML = `El amigo secreto es: ${amigoSorteado}`
+        resultado.className = 'result-list'
+    }
+    return
 }
