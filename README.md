@@ -18,3 +18,22 @@
 - `Validar entrada:` Si el campo de texto está vacío, el programa mostrará una alerta pidiendo un nombre válido.
 - `Visualizar la lista:` Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
 - `Sorteo aleatorio:` Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
+
+<h2>Capturas de pantalla</h2>
+
+<em>Al momento de hacer clic con el campo vacío nos muestra un mensaje de error.</em>
+
+![image](https://github.com/user-attachments/assets/f8be53c1-6ee7-4331-a422-6e41807d2a18)
+
+<em>Al intentar ingresar un numero o un nombre que contenga algun numero no lo va a permitir.</em>
+
+![image](https://github.com/user-attachments/assets/89bfa64d-10bb-4e56-91f1-60b6df4c1298)
+
+<em>Si se intentar realizar un sorteo sin haber agregado amigos no lo permitirá.</em>
+<p><strong>Nota: Deben haber registrado como mínimo dos (2) amigos.</strong></p>
+
+![image](https://github.com/user-attachments/assets/a78ce8d0-c8d2-46fa-b627-62033419418d)
+
+<em>Una vez se hayan agregado amigos y se le da clic en el botón sortear, este nos mostrará un mensaje exitoso con el nombre del amigo secreto.</em>
+
+![image](https://github.com/user-attachments/assets/d253d196-7256-4366-9e42-905bf9d4a0a9)
