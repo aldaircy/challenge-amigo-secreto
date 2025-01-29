@@ -5,7 +5,7 @@
 <!--![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)-->
 
 <p>
-  Esta es una aplicación que se llevó a cabo a través de un desafío propuesto por la comunidad de Alura Latam. Fue creada con HTML, CSS y Javascript. La aplicación nos permite a los usuarios ingresar nombres de amigos y añadirlos a una lista para luego realizar un sorteo aleatorio y determinar quién es el "amigo secreto".
+  Esta es una aplicación que se llevó a cabo a través de un desafío propuesto por la comunidad de Alura Latam y Oracle por medio de su proyecto educativo Oracle Next Education (ONE). Fue creada con HTML, CSS y Javascript. La aplicación nos permite a los usuarios ingresar nombres de amigos y añadirlos a una lista para luego realizar un sorteo aleatorio y determinar quién es el "amigo secreto".
 </p>
 
 <p>
